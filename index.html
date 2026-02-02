@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barbearia Elite</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header>
+    <h1><i class="fa-solid fa-scissors"></i> Barbearia Elite</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>Na <strong>Barbearia Elite</strong>, estilo e tradição se encontram. Ambiente confortável, atendimento de qualidade e os melhores profissionais da região. Venha renovar o visual com a gente!</p>
+    </section>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <div class="servicos">
+        <div class="servico">
+          <h3><i class="fa-solid fa-cut"></i> Corte Masculino</h3>
+          <p>Estilos clássicos e modernos com acabamento perfeito.</p>
+        </div>
+        <div class="servico">
+          <h3><i class="fa-solid fa-beard"></i> Barba Completa</h3>
+          <p>Modelagem e cuidados especiais para deixar sua barba impecável.</p>
+        </div>
+        <div class="servico">
+          <h3><i class="fa-solid fa-eye"></i> Design de Sobrancelhas</h3>
+          <p>Precisão e estilo em cada detalhe do seu olhar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria</h2>
+      <div class="carrossel">
+        <img src="https://source.unsplash.com/400x250/?barber,1" alt="Foto 1">
+        <img src="https://source.unsplash.com/400x250/?barbershop,2" alt="Foto 2">
+        <img src="https://source.unsplash.com/400x250/?haircut,3" alt="Foto 3">
+        <img src="https://source.unsplash.com/400x250/?barber,4" alt="Foto 4">
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Agende seu Horário</h2>
+      <p>Quer marcar um horário? Clique no botão abaixo e fale conosco no WhatsApp.</p>
+      <a class="btn-whatsapp" id="agendarBtn" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> Agendar via WhatsApp
+      </a>
+
+      <h3 style="margin-top: 40px;">Ou envie uma mensagem:</h3>
+      <form class="form-contato" action="https://formsubmit.co/SEU_EMAIL_AQUI" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="mensagem" placeholder="Sua mensagem" rows="4" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="mapa">
+        <h3>Onde estamos:</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.808228212194!2d-43.18569048502881!3d-22.958985184982342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f8b214bb8f5%3A0x2a232b50a870c0f0!2sCopacabana%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1712345678901"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 <strong>Barbearia Elite</strong>. Todos os direitos reservados.</p>
+    <div class="redes-sociais">
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </footer>
+  
+ 
+  
+  <script src="script.js"></script>
+</body>
+</html>
